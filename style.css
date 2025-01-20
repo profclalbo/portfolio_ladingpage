@@ -220,3 +220,92 @@ footer {
     font-weight: bold;
 }
 
+/* Responsividade para telas menores (smartphones) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .titulo-destaque {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .descricao-imagem {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .descricao {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .imagem img {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .cursos {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .cursos h3 {
+        font-size: 20px;
+    }
+
+    .curso-detalhe {
+        padding: 15px;
+    }
+
+    .promocao {
+        margin-top: 15px;
+    }
+
+    .preco {
+        font-size: 20px;
+    }
+
+    .preco-novo {
+        font-size: 28px;
+    }
+
+    .cta-botao {
+        width: 90%;
+        padding: 12px 0;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+
+    .contato {
+        font-size: 14px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botao {
+        width: 90%;
+        text-align: center;
+    }
+
+    .chatbot-widget {
+        width: 100px;
+        bottom: 20px;
+        right: 10px;
+    }
+
+    .chatbot-widget img {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
