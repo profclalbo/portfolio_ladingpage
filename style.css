@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(4, 4, 27);
+    color: #F6F6F6;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-destaque {
+    font-size: 40px;
+    color: #22D4FD;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.texto-justificado {
+    text-align: justify;
+    line-height: 1.8; /* Melhora a legibilidade */
+    margin-bottom: 20px; /* Espaço entre os parágrafos */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.descricao-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.descricao {
+    max-width: 600px;
+}
+
+.descricao h2 {
+    font-size: 28px;
+    color: #22D4FD;
+}
+
+.imagem img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cursos {
+    max-width: 800px;
+    text-align: center;
+}
+
+.cursos h3 {
+    font-size: 24px;
+    color: #22D4FD;
+    margin-bottom: 30px;
+}
+
+.curso-detalhe {
+    background-color: #1b1b40;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.curso-detalhe h4 {
+    font-size: 20px;
+    color: #22D4FD;
+    margin-bottom: 10px;
+}
+
+.curso-detalhe:hover {
+    background-color: #2b2b5e;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.promocao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #FF6F61;
+}
+
+.preco-novo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #22D4FD;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.preco-novo:hover {
+    color: #00FF00;
+    animation: pulse 0.6s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cta-botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF0000;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.cta-botao:hover {
+    background-color: #00FF00;
+    color: #000;
+}
+
+.contato {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #F6F6F6;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 5px;
+}
+
+.botao {
+    padding: 15px 30px;
+    background-color: #22D4FD;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #00FF00;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #1b1b40;
+    color: #F6F6F6;
+    margin-top: 50px;
+}
+
+.chatbot-widget {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 120px;
+    text-align: center;
+    background-color: #1b1b40;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.chatbot-widget:hover {
+    transform: scale(1.1);
+    background-color: #18427b;
+    cursor: pointer;
+}
+
+.chatbot-widget img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.chatbot-widget span {
+    color: #22D4FD;
+    font-size: 14px;
+    font-weight: bold;
+}
+
