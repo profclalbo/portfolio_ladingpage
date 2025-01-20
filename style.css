@@ -164,8 +164,9 @@ main {
 .botoes {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 20px; /* Ajuste o valor para aumentar ou diminuir o espaçamento */
     margin-top: 5px;
+    flex-wrap: wrap; /* Para garantir que se ajustem em telas muito pequenas */
 }
 
 .botao {
@@ -177,12 +178,15 @@ main {
     font-weight: bold;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    text-align: center;
+    width: auto; /* Garante que o botão ocupe apenas o espaço necessário */
 }
 
 .botao:hover {
     background-color: #00FF00;
     color: #000;
 }
+
 
 footer {
     text-align: center;
