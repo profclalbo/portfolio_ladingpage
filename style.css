@@ -135,7 +135,6 @@ main {
         transform: scale(1);
     }
 }
-
 .cta-botao {
     display: inline-block;
     padding: 15px 30px;
@@ -164,9 +163,8 @@ main {
 .botoes {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Ajuste o valor para aumentar ou diminuir o espaçamento */
-    margin-top: 5px;
-    flex-wrap: wrap; /* Para garantir que se ajustem em telas muito pequenas */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 20px;
 }
 
 .botao {
@@ -177,16 +175,19 @@ main {
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
-    transition: background-color 0.3s ease;
     text-align: center;
-    width: auto; /* Garante que o botão ocupe apenas o espaço necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Ajuste o tamanho do botão se necessário */
+    height: 50px; /* Garante altura consistente */
 }
 
 .botao:hover {
     background-color: #00FF00;
     color: #000;
 }
-
 
 footer {
     text-align: center;
